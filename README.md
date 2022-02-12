@@ -10,7 +10,7 @@ LinkedIn Course Link: https://www.linkedin.com/learning/react-js-building-an-int
 
 This project has been created to practice working within the React Framework and learning Tailwind CSS. The application is a work in progress. It does not have all of the features I would like to add and plan to continue working on.
 
-<img align="center" title="Sort Features" width = "350px" 
+<img align="center" title="Sort Features" width = "700px" 
            src="https://user-images.githubusercontent.com/84540978/153693512-2918d584-cb99-4fed-bd85-900f8b7f6d22.jpg" />
 
 # Current Functionality:
