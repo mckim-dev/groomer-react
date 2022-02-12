@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Author: Robin Mckim
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Special thanks to Ray Villalobos for introducing this project via a LinkedIn Course.
 
-## Available Scripts
+Ray Villalobos: https://www.linkedin.com/learning/instructors/ray-villalobos
+LinkedIn Course Link: https://www.linkedin.com/learning/react-js-building-an-interface-8551484
 
-In the project directory, you can run:
+# Project Description:
 
-### `npm start`
+This project has been created to practice working within the React Framework and learning Tailwind CSS. The application is a work in progress. It does not have all of the features I would like to add and plan to continue working on.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![screen1][1]]
+[1]: https://user-images.githubusercontent.com/84540978/xx.jpg
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Current Functionality:
 
-### `npm test`
+- At present, the application will allow a user to schedule a pet grooming appointment.
+- The user may submit the appointment and it will show in the appointment list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![screen2][2]]
+[2]:https://user-images.githubusercontent.com/84540978/xx.jpg
 
-### `npm run build`
+- The user may sort appointments from ascending to descending order, based on the pet's name, the owner's name or the date of the appointment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![screen3][3]]
+[3]:https://user-images.githubusercontent.com/84540978/xx.jpg
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Features to be added:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- User (pet owner) Login
+  - Pet profile page / register pet / upload pet photo, breed, name, DOB, personality
+  - Grooming History / Rewards Points / tracking for free nail trim service
+- Grooming Services Menu with prices
+- Service total cost (minus tax) calculations based on services selected during scheduling
+- Marketing Page with Sale/Discount Promotions
 
-### `npm run eject`
+# Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    "autoprefixer": "^10.4.2",
+    "forms": "^1.3.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
