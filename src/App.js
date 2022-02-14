@@ -40,39 +40,41 @@ function App() {
   }, [fetchData]);
 
   return (
-    <div className="App container mx-auto mt-5 font-thin">
+    <div className="App max-w-6xl mx-auto px-4 pt-5 font-thin">
       <img src="../cutedogsbanner.jpg" alt="Cute Dogs"></img>
       <h1 className="text-5xl my-8">
         <BiCalendar className="inline-block text-[#78b8bc] align-top" />Schedule Grooming</h1>
-      <div className="gap-12 columns-2">
-        <AddAppointment
-          onSendAppointment={myAppointment => setAppointmentList([...appointmentList, myAppointment])}
-          lastId={appointmentList.reduce((max, item) => Number(item.id) > max ? Number(item.id) : max, 0)}
+      <div class="flex flex-row flex-wrap mx-auto overflow-hidden">
+        <div class="basis-full md:basis-2/3 px-4 space-y-4">
+          <Search query={query}
+            onQueryChange={myQuery => setQuery(myQuery)}
+            orderBy={orderBy}
+            onOrderByChange={mySort => setOrderBy(mySort)}
+            sortBy={sortBy}
+            onSortByChange={mySort => setSortBy(mySort)}
+          />
+          <ul className="divide-y divide-gray-200">
+            {filteredAppts
+              .map(appointment => (
+                <AppointmentInfo key={appointment.id}
+                  appointment={appointment}
+                  onDeleteAppt={
+                    appointmentId =>
+                      setAppointmentList(appointmentList.filter(appointment =>
+                        appointment.id !== appointmentId))
+                  }
+                />
+              ))
+            }
+          </ul>
+        </div>
+        <div class="basis-full md:basis-1/3 px-4 mb-6">
+          <AddAppointment
+            onSendAppointment={myAppointment => setAppointmentList([...appointmentList, myAppointment])}
+            lastId={appointmentList.reduce((max, item) => Number(item.id) > max ? Number(item.id) : max, 0)}
 
-        />
-
-        <Search query={query}
-          onQueryChange={myQuery => setQuery(myQuery)}
-          orderBy={orderBy}
-          onOrderByChange={mySort => setOrderBy(mySort)}
-          sortBy={sortBy}
-          onSortByChange={mySort => setSortBy(mySort)}
-        />
-
-        <ul className="divide-y divide-gray-200">
-          {filteredAppts
-            .map(appointment => (
-              <AppointmentInfo key={appointment.id}
-                appointment={appointment}
-                onDeleteAppt={
-                  appointmentId =>
-                    setAppointmentList(appointmentList.filter(appointment =>
-                      appointment.id !== appointmentId))
-                }
-              />
-            ))
-          }
-        </ul>
+          />
+        </div>
       </div>
     </div>
   );
