@@ -8,6 +8,7 @@ import AppointmentInfo from "./components/AppointmentInfo";
 function App() {
 
   let [appointmentList, setAppointmentList] = useState([]);
+  let [listLength, setListLength] = useState([]);
   let [query, setQuery] = useState("");
   let [sortBy, setSortBy] = useState("petName");
   let [orderBy, setOrderBy] = useState("asc");
@@ -53,8 +54,9 @@ function App() {
             sortBy={sortBy}
             onSortByChange={mySort => setSortBy(mySort)}
           />
+          <p>The following list provides the first 5 appointments found within the search criteria</p>
           <ul className="divide-y divide-gray-200">
-            {filteredAppts
+            {filteredAppts.slice(0, 5)
               .map(appointment => (
                 <AppointmentInfo key={appointment.id}
                   appointment={appointment}
