@@ -1,7 +1,9 @@
 ### Author: Robin Mckim
 
+Demo Site Hosted at: Demo Site: https://react-groomer.netlify.app/index.html
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). <br />
-Special thanks to Ray Villalobos for introducing this project via a LinkedIn Course.
+Special thanks to Ray Villalobos for introducing me to Tailwind CSS and providing inspiration for this project via a LinkedIn Course.
 
 Ray Villalobos: https://www.linkedin.com/learning/instructors/ray-villalobos <br />
 LinkedIn Course Link: https://www.linkedin.com/learning/react-js-building-an-interface-8551484
@@ -14,7 +16,7 @@ This project has been created to practice working within the React Framework and
   <tr>
     <td>
       <img align="center" title="Sort Features" width = "750px" 
-           src="https://user-images.githubusercontent.com/84540978/153693512-2918d584-cb99-4fed-bd85-900f8b7f6d22.jpg" />
+           src="https://user-images.githubusercontent.com/84540978/153811687-4fd07f1d-3a81-4354-9ecf-ba13b00f2c7f.jpg" />
     </td>
   </tr>
 </table>
@@ -31,11 +33,11 @@ This project has been created to practice working within the React Framework and
   <tr>
     <td>
       <img align="center" title="Schedule Form" width = "375px" 
-           src="https://user-images.githubusercontent.com/84540978/153693569-8df428ad-4a21-445d-a3f6-43d0f0074e61.jpg" />
+           src="https://user-images.githubusercontent.com/84540978/153812149-76ac9e3f-8407-4a3c-b9d6-ae84af420b32.jpg" />
     </td>
     <td>
       <img align="center" title="Sort Features" width = "375px" 
-           src="https://user-images.githubusercontent.com/84540978/153693581-5b906d27-2ca0-4dc8-9703-6fb53c61615e.jpg" />
+           src="https://user-images.githubusercontent.com/84540978/153812165-5607aff2-bd49-47f7-a526-c11db2c3d0c2.jpg" />
     </td>
 </tr>
 </table>
