@@ -32,11 +32,11 @@ This project has been created to practice working within the React Framework and
 <table align="center"> 
   <tr>
     <td>
-      <img align="center" title="Schedule Form" width = "375px" 
+      <img align="center" title="Schedule Form" width = "440px" 
            src="https://user-images.githubusercontent.com/84540978/153812149-76ac9e3f-8407-4a3c-b9d6-ae84af420b32.jpg" />
     </td>
     <td>
-      <img align="center" title="Sort Features" width = "375px" 
+      <img align="center" title="Sort Features" width = "310px" 
            src="https://user-images.githubusercontent.com/84540978/153812165-5607aff2-bd49-47f7-a526-c11db2c3d0c2.jpg" />
     </td>
 </tr>
