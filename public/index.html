@@ -20,53 +20,51 @@
     <nav class="bg-[#78b8bc] shadow-sm">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
-          <div class="flex space-x-7">
-            <!--logo svg-->
-            <div class="flex items-center px-2">
-              <svg class="logo-width">
-                <use
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="#mylogo"
-                ></use>
+          <!--logo svg-->
+          <div class="flex flex-start items-center px-2">
+            <svg class="logo-width">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#mylogo"
+              ></use>
+            </svg>
+          </div>
+          <!--nav items-->
+          <div class="hidden md:flex flex-end items-center space-x-4">
+            <a href="#" class="px-2 text-white border-white font-semibold"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="px-2 text-white font-semibold hover:text-[#007890] transition duration-300"
+              >React Example</a
+            >
+            <a
+              href="#"
+              class="px-2 text-white font-semibold hover:text-[#007890] transition duration-300"
+              >Contact</a
+            >
+          </div>
+          <!--mobile button-->
+          <div class="md:hidden flex justify-between">
+            <button class="outline-none hamburger">
+              <svg
+                class="w-6 h-6 text-white hover:text-[#007890]"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
-            </div>
-            <!--nav items-->
-            <div class="hidden md:flex items-center space-x-1">
-              <a href="#" class="px-2 text-white border-white font-semibold"
-                >Home</a
-              >
-              <a
-                href="#"
-                class="px-2 text-white font-semibold hover:text-[#007890] transition duration-300"
-                >React Example</a
-              >
-              <a
-                href="#"
-                class="px-2 text-white font-semibold hover:text-[#007890] transition duration-300"
-                >Contact</a
-              >
-            </div>
-            <!--mobile button-->
-            <div class="sm:hidden flex items-center">
-              <button class="outline-none hamburger">
-                <svg
-                  class="w-6 h-6 text-white hover:text-[#007890]"
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
-            </div>
+            </button>
           </div>
         </div>
         <!--mobile menu-->
-        <div class="hidden mobile-menu">
+        <div class="hidden mobile-menu py-5">
           <ul class="">
             <li class="active">
               <a
@@ -103,7 +101,7 @@
     </nav>
     <!--end nav-->
     <div class="text-center font-thin">
-      <h1 class="text-5xl my-8 text-[#78b8bc]">
+      <h1 class="text-3xl md:text-5xl my-8 text-[#78b8bc]">
         This is an example of a simple React Application
       </h1>
       <p>React can be used for simple and complex applications</p>

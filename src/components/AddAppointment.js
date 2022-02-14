@@ -29,11 +29,10 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
   return (
     <div>
       <button
-        className="bg-[#78b8bc] text-white px-2 py-3 w-full text-left">
-        <div><BiCalendarPlus className="inline-block align-text-top" />  Add Appointment</div>
+        className="bg-[#78b8bc] text-white text-md px-2 py-2 w-full">
+        <div><BiCalendarPlus className="inline-block text-lg align-text-top" />  Add Appointment  </div>
       </button>
-
-      <div className="border-r-2 border-b-2 border-l-2 border-light-blue-500 rounded-b-md pl-4 pr-4 pb-4">
+      <div className="border-r-2 border-b-2 border-l-2 border-light-blue-500 rounded-b-md pl-4 pr-4 py-4">
         <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
           <label htmlFor="ownerName" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
             Owner Name
@@ -42,11 +41,11 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
             <input type="text" name="ownerName" id="ownerName"
               onChange={(event) => { setFormData({ ...formData, ownerName: event.target.value }) }}
               value={formData.ownerName}
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>
         </div>
 
-        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start pt-5">
           <label htmlFor="petName" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
             Pet Name
           </label>
@@ -54,47 +53,47 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
             <input type="text" name="petName" id="petName"
               onChange={(event) => { setFormData({ ...formData, petName: event.target.value }) }}
               value={formData.petName}
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>
         </div>
 
-        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start pt-5">
           <label htmlFor="aptDate" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
-            Apt Date
+            Appt. Date
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="date" name="aptDate" id="aptDate"
               onChange={(event) => { setFormData({ ...formData, aptDate: event.target.value }) }}
               value={formData.aptDate}
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>
         </div>
 
-        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start pt-5">
           <label htmlFor="aptTime" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
-            Apt Time
+            Appt. Time
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="time" name="aptTime" id="aptTime"
               onChange={(event) => { setFormData({ ...formData, aptTime: event.target.value }) }}
               value={formData.aptTime}
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>
         </div>
 
-        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start pt-5">
           <label htmlFor="aptServices" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
-            Appointment Services
+            Appt. Services
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <textarea id="aptServices" name="aptServices" rows="3"
               onChange={(event) => { setFormData({ ...formData, aptServices: event.target.value }) }}
               value={formData.aptServices}
-              className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Include Grooming Service Details"></textarea>
+              className="shadow-sm focus:ring-[#007890] focus:border-[#007890] mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Include Grooming Service Details"></textarea>
           </div>
         </div>
 
-        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start pt-5">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
             Email
           </label>
@@ -102,7 +101,7 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
             <input type="email" name="email" id="email"
               onChange={(event) => { setFormData({ ...formData, email: event.target.value }) }}
               value={formData.email}
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>
         </div>
 

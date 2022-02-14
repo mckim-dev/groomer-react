@@ -2,7 +2,7 @@ import { BiTrash } from 'react-icons/bi';
 
 const AppointmentInfo = ({ appointment, onDeleteAppt }) => {
   return (
-    <li className="px-3 py-3 flex items-start">
+    <li className="px-2 py-3 flex items-start">
       <div className="flex-grow">
         <div className="flex items-center">
           <span className="flex-none font-medium text-2xl text-[#78b8bc]">{appointment.petName}</span>
