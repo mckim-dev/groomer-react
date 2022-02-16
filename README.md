@@ -16,7 +16,7 @@ This project has been created to practice working within the React Framework and
   <tr>
     <td>
       <img align="center" title="Sort Features" width = "750px" 
-           src="https://user-images.githubusercontent.com/84540978/153811687-4fd07f1d-3a81-4354-9ecf-ba13b00f2c7f.jpg" />
+           src="https://user-images.githubusercontent.com/84540978/154197430-56c12f02-5621-4c14-8f69-85b02162d1e1.jpg" />
     </td>
   </tr>
 </table>
