@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { BiCalendar } from 'react-icons/bi';
+import { FaDog } from 'react-icons/fa';
 import AddAppointment from "./components/AddAppointment";
 import Search from "./components/Search";
 import AppointmentInfo from "./components/AppointmentInfo";
@@ -43,8 +43,8 @@ function App() {
   return (
     <div className="App max-w-6xl mx-auto px-4 pt-5 font-thin">
       <img src="../cutedogsbanner.jpg" alt="Cute Dogs"></img>
-      <h1 className="text-3xl md:text-5xl my-8">
-        <BiCalendar className="inline-block text-[#78b8bc] align-top" />Schedule Grooming</h1>
+      <h1 className="text-3xl md:text-5xl my-8 font-medium text-center text-[#8e7ea3]">
+        Grooming Schedule <FaDog className="inline-block text-[#8e7ea3] align-top" />  </h1>
       <div class="flex flex-row flex-wrap mx-auto overflow-hidden">
         <div class="basis-full md:basis-3/5 px-3 space-y-4">
           <Search query={query}
