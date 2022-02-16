@@ -1,6 +1,6 @@
 ### Author: Robin Mckim
 
-Demo Site Hosted at: Demo Site: https://react-groomer.netlify.app/index.html
+Demo Site Hosted at: https://react-groomer.netlify.app/index.html
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). <br />
 Special thanks to Ray Villalobos for introducing me to Tailwind CSS and providing inspiration for this project via a LinkedIn Course.
