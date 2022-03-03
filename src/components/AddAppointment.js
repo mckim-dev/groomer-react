@@ -8,7 +8,8 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
     aptDate: '',
     aptTime: '',
     aptServices: '',
-    email: ''
+    email: '',
+    image: ''
   };
 
   let [formData, setFormData] = useState(clearData);
@@ -20,7 +21,8 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
       petName: formData.petName,
       aptDate: formData.aptDate + ' ' + formData.aptTime,
       aptServices: formData.aptServices,
-      email: formData.email
+      email: formData.email,
+      image: formData.petName
     }
     onSendAppointment(appointmentInfo);
     setFormData(clearData);
@@ -51,7 +53,7 @@ const AddAppointment = ({ onSendAppointment, lastId }) => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="text" name="petName" id="petName" required="true"
-              onChange={(event) => { setFormData({ ...formData, petName: event.target.value }) }}
+              onChange={(event) => { setFormData({ ...formData, petName: event.target.value, image: event.target.value }) }}
               value={formData.petName}
               className="max-w-lg block w-full shadow-sm focus:ring-[#007890] focus:border-[#007890] sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
           </div>

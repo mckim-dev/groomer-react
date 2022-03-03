@@ -5,7 +5,8 @@
       "ownerName": "Sarah Trell",
       "aptServices": "Coat Trim and bath",
       "aptDate": "2021-11-28 10:00",
-      "email": "strell@random.com"
+      "email": "strell@random.com",
+      "image": "./Quinn.jpg"
     },
     {
       "id": "1",
@@ -13,7 +14,8 @@
       "ownerName": "Betsy Ferlson",
       "aptServices": "Full Spa Treatment",
       "aptDate": "2021-11-28 10:15",
-      "email": "bFerl1982@random.com"
+      "email": "bFerl1982@random.com",
+      "image": "./Rico.jpg"
     },
     {
       "id": "2",
@@ -21,7 +23,8 @@
       "ownerName": "Jesse Andrews",
       "aptServices": "Bath and Nail Trim",
       "aptDate": "2021-11-28 14:45",
-      "email": "jAndrews@random.com"
+      "email": "jAndrews@random.com",
+      "image": "./Bella.jpg"
     },
     {
       "id": "3",
@@ -29,7 +32,8 @@
       "ownerName": "Rich Swigil",
       "aptServices": "Bath",
       "aptDate": "2021-11-28 16:00",
-      "email": "richieSwig@random.com"
+      "email": "richieSwig@random.com",
+      "image": "./Filo.jpg"
     },
     {
       "id": "4",
@@ -37,7 +41,8 @@
       "ownerName": "Scott Bell",
       "aptServices": "Trim, Coat trim, Teeth Cleaning",
       "aptDate": "2021-11-28 9:00",
-      "email": "scottBell73@random.com"
+      "email": "scottBell73@random.com",
+      "image": "./Marley.jpg"
     },
     {
       "id": "5",
@@ -45,7 +50,8 @@
       "ownerName": "Nadine Schwan",
       "aptServices": "Full Spa Treatment",
       "aptDate": "2021-11-29 13:15",
-      "email": "schwanmom68@random.com"
+      "email": "schwanmom68@random.com",
+      "image": "./zena.jpg"
     },
     {
       "id": "6",
@@ -53,7 +59,8 @@
       "ownerName": "Kelly McDaniel",
       "aptServices": "Bath",
       "aptDate": "2021-11-29 10:00",
-      "email": "pilotMcD_kel@random.com"
+      "email": "pilotMcD_kel@random.com",
+      "image": "./Popeye.jpg"
     },
     {
       "id": "7",
@@ -61,7 +68,8 @@
       "ownerName": "Jack Lobek",
       "aptServices": "Bath, Double Condition",
       "aptDate": "2021-11-29 11:45",
-      "email": "tooLobek4u@random.com"
+      "email": "tooLobek4u@random.com",
+      "image": "./maynard.jpg"
     },
     {
       "id": "8",
@@ -69,7 +77,8 @@
       "ownerName": "Kari Hilbeck",
       "aptServices": "Nail trim, bath",
       "aptDate": "2021-11-29 14:30",
-      "email": "trailblazer0012@random.com"
+      "email": "trailblazer0012@random.com",
+      "image": "./Snowflake.jpg"
     },
     {
       "id": "9",
@@ -77,7 +86,8 @@
       "ownerName": "Martin Wetson",
       "aptServices": "Full Spa Treatment",
       "aptDate": "2021-11-29 16:00",
-      "email": "anotherFakeEmail@random.com"
+      "email": "anotherFakeEmail@random.com",
+      "image": "./Lorax.jpg"
     },
     {
       "id": "10",
@@ -85,7 +95,8 @@
       "ownerName": "Derek Langdon",
       "aptServices": "Bath, Double Condition",
       "aptDate": "2021-11-29 8:30",
-      "email": "yulien_art12@random.com"
+      "email": "yulien_art12@random.com",
+      "image": "./Wiggles.jpg"
     },
     {
       "id": "11",
@@ -93,6 +104,7 @@
       "ownerName": "Frannie DeMarco",
       "aptServices": "Coat Trim, Bath, Nail Trim",
       "aptDate": "2021-11-30 10:15",
-      "email": "bodedogdemarco@random.com"
+      "email": "bodedogdemarco@random.com",
+      "image": "./Bo.jpg"
     }
   ]

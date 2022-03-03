@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo-width {
+.logoWidth {
   width: 8rem;
-  height: 6rem;
+  height: 5rem;
+}
+
+.navlinkStyle {
+  @apply block text-sm px-2 py-4 text-white bg-[#78b8bc] font-semibold hover:tracking-wider hover:px-6 transition duration-300;
 }

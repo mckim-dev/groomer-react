@@ -1,84 +1,53 @@
-import { useState, useEffect, useCallback } from 'react';
-import { FaDog } from 'react-icons/fa';
-import AddAppointment from "./components/AddAppointment";
-import Search from "./components/Search";
-import AppointmentInfo from "./components/AppointmentInfo";
+import React, { useState, useEffect, useCallback } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/index";
+import About from "./pages/about";
+import Appointments from "./pages/appts";
+import Schedule from "./pages/schedule";
+import Contact from "./pages/contact";
+
+// import { FaDog } from 'react-icons/fa';
+// import NavMobile from "./components/NavMobile";
+// import { Outlet } from "react-router-dom";
+// import Form from './components/Form';
 
 
 function App() {
+  const [isShowing, setIsShowing] = useState(false)
 
-  let [appointmentList, setAppointmentList] = useState([]);
-  let [query, setQuery] = useState("");
-  let [sortBy, setSortBy] = useState("petName");
-  let [orderBy, setOrderBy] = useState("asc");
+  const toggle = () => {
+    setIsShowing(!isShowing);
+  };
 
-  const filteredAppts = appointmentList.filter(
-    item => {
-      return (
-        item.petName.toLowerCase().includes(query.toLowerCase()) ||
-        item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
-        item.email.toLowerCase().includes(query.toLowerCase()) ||
-        item.aptServices.toLowerCase().includes(query.toLowerCase())
-      )
-    }
-  ).sort((a, b) => {
-    let order = (orderBy === 'asc') ? 1 : -1;
-    return (
-      a[sortBy].toLowerCase() < b[sortBy].toLowerCase() ? -1 * order : 1 * order
-    )
-  })
+  // useEffect = (() => {
+  //   const hideMobile = () => {
+  //     if (window.innerWidth > 768 && isShowing) {
+  //       setIsShowing(false);
+  //     }
+  //   };
 
-  const fetchData = useCallback(() => {
-    fetch('./data.json')
-      .then(response => response.json())
-      .then(data => {
-        setAppointmentList(data)
-      });
-  }, [])
+  //   window.addEventListener('resize', hideMobile);
 
-  useEffect(() => {
-    fetchData()
-  }, [fetchData]);
+  //   return () => {
+  //     window.removeEventListener('resize', hideMobile);
+  //   };
+  // }
+  // );
 
   return (
-    <div className="App max-w-6xl mx-auto px-4 pt-5 font-thin">
-      <img src="../cutedogsbanner.jpg" alt="Cute Dogs"></img>
-      <h1 className="text-3xl md:text-5xl my-8 font-medium text-center text-[#8e7ea3]">
-        Grooming Schedule <FaDog className="inline-block text-[#8e7ea3] align-top" />  </h1>
-      <div class="flex flex-row flex-wrap mx-auto overflow-hidden">
-        <div class="basis-full md:basis-3/5 px-3 space-y-4">
-          <Search query={query}
-            onQueryChange={myQuery => setQuery(myQuery)}
-            orderBy={orderBy}
-            onOrderByChange={mySort => setOrderBy(mySort)}
-            sortBy={sortBy}
-            onSortByChange={mySort => setSortBy(mySort)}
-          />
-          <p>The following list provides the first 5 appointments found within the search criteria</p>
-          <ul className="divide-y divide-gray-200">
-            {filteredAppts.slice(0, 5)
-              .map(appointment => (
-                <AppointmentInfo key={appointment.id}
-                  appointment={appointment}
-                  onDeleteAppt={
-                    appointmentId =>
-                      setAppointmentList(appointmentList.filter(appointment =>
-                        appointment.id !== appointmentId))
-                  }
-                />
-              ))
-            }
-          </ul>
-        </div>
-        <div class="basis-full md:basis-2/5 px-3 pt-1 mb-6">
-          <AddAppointment
-            onSendAppointment={myAppointment => setAppointmentList([...appointmentList, myAppointment])}
-            lastId={appointmentList.reduce((max, item) => Number(item.id) > max ? Number(item.id) : max, 0)}
-
-          />
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Navbar toggle={toggle} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="schedule" element={<Schedule />} />
+        <Route path="about" element={<About />} />
+        <Route path="appts" element={<Appointments />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
