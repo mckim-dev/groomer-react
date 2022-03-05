@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Appointments from "./pages/appts";
 import Schedule from "./pages/schedule";
 import Contact from "./pages/contact";
+import OurReviews from "./pages/reviews";
 
 // import { FaDog } from 'react-icons/fa';
 // import NavMobile from "./components/NavMobile";
@@ -44,6 +45,7 @@ function App() {
         <Route path="schedule" element={<Schedule />} />
         <Route path="about" element={<About />} />
         <Route path="appts" element={<Appointments />} />
+        <Route path="reviews" element={<OurReviews />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />

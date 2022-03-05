@@ -10,3 +10,76 @@
 .navlinkStyle {
   @apply block text-sm px-2 py-4 text-white bg-[#78b8bc] font-semibold hover:tracking-wider hover:px-6 transition duration-300;
 }
+
+.heroImg {
+  background-image: url("https://placedog.net/1280/g?id=124");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bgContact {
+  background-image: url("https://placedog.net/1280/b?id=130");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+
+.bgReg {
+  background-image: url("https://placedog.net/1400/g?id=29");
+  background-position: bottom;
+}
+
+.bgServDelux {
+  background-image: url("https://placedog.net/700/g?id=1");
+  background-position: center left;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+.bgServNailTrim {
+  background-image: url("https://placedog.net/700/g?id=23");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+.bgServFace {
+  background-image: url("https://placedog.net/700/g?id=34");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+.bgServArea {
+  background-image: url("https://placedog.net/700/g?id=132");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+.bgServFull {
+  background-image: url("https://placedog.net/700/g?id=185");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+.bgServCombo {
+  background-image: url("https://placedog.net/700/g?id=128");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+/* checkbox stars for reviews form */
+.star {
+  visibility: hidden;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(229 231 235);
+}
+.star:before {
+  content: "\2605";
+  position: absolute;
+  visibility: visible;
+}
+.star:checked:before {
+  content: "\2606";
+  position: absolute;
+  color: #78b8bc;
+}

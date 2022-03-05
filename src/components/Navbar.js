@@ -26,8 +26,11 @@ const Navbar = ({ toggle }) => {
                     <Link to='/about' className="navlinkStyle">
                         ABOUT
                     </Link>
+                    <Link to='/reviews' className="navlinkStyle">
+                        REVIEWS
+                    </Link>
                     <Link to='/contact' className="navlinkStyle">
-                        CONTACT
+                        REGISTER
                     </Link>
                 </div>
             </nav>

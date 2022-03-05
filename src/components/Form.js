@@ -87,7 +87,7 @@ const Form = () => {
                 <input type="checkbox" id="deluxeBathNailTrim"
                   className="focus:ring-[#007890] h-4 w-4 text-[#007890] border-gray-300"
                   name="deluxeBathNailTrim" {...register("deluxeBathNailTrim", {})} />
-                <label htmlfor="deluxeBathNailTrim" className="ml-3 inline-block text-sm font-medium text-gray-700">Deluxe Bath and Nail Trim</label>
+                <label htmlFor="deluxeBathNailTrim" className="ml-3 inline-block text-sm font-medium text-gray-700">Deluxe Bath and Nail Trim</label>
               </div>
             </div>
             <div className="flex items-center">
@@ -95,7 +95,7 @@ const Form = () => {
                 <input type="checkbox" id="deluxeBath"
                   className="focus:ring-[#007890] h-4 w-4 text-[#007890] border-gray-300"
                   name="deluxeBath" {...register("deluxeBath", {})} />
-                <label htmlfor="deluxeBath" className="ml-3 inline-block text-sm font-medium text-gray-700">Deluxe Bath</label>
+                <label htmlFor="deluxeBath" className="ml-3 inline-block text-sm font-medium text-gray-700">Deluxe Bath</label>
               </div>
             </div>
             <div className="flex items-center">
@@ -103,7 +103,7 @@ const Form = () => {
                 <input type="checkbox" id="nailTrim"
                   className="focus:ring-[#007890] h-4 w-4 text-[#007890] border-gray-300"
                   name="nailTrim" {...register("nailTrim", {})} />
-                <label htmlfor="nailTrim" className="ml-3 inline-block text-sm font-medium text-gray-700">Nail Trim</label>
+                <label htmlFor="nailTrim" className="ml-3 inline-block text-sm font-medium text-gray-700">Nail Trim</label>
               </div>
             </div>
           </div>
